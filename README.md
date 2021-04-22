@@ -1,6 +1,6 @@
-# Getting Started with Create React App
+# My first app with React 
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Este es mi primer proyecto creado con Reactjs. Se trata de una aplicacion del clima, en la cual podemos buscar cualquier ciudad que deseemos y obtendremos informacion del clima en dicha ciudad.
 
 ## Available Scripts
 
