@@ -1,0 +1,15 @@
+.container{
+    display:flex;
+    justify-content:flex-end;
+
+}
+.btnSearch{
+    color: black;
+    background-color: rgb(65, 180, 225);
+    border: 2px solid gray;
+    margin-left: 5px;
+}
+.btnSearch:hover{
+    color:black;
+    background-color: whitesmoke;
+}

@@ -1,0 +1,27 @@
+.card {
+    display:inline-flex;
+    flex-direction:column;
+    width: 250px;    
+    background-color: rgb(65, 180, 225);
+    border: 2px solid black;
+    border-radius: 5px;
+}
+.info {
+    display:flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.btnRed {
+    color : whitesmoke;
+    background-color:lightcoral;
+    border-radius: 5px;
+    width: 30px;
+    margin: 5px;
+    align-self: flex-end;
+}
+
+.btnRed:hover{
+    color:black;
+    background-color: whitesmoke;
+}
