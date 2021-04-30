@@ -12,15 +12,16 @@ export default function Search(props) {
         setName("");
     };
     return (
-        <div className={style.container}>
-            <form onSubmit={handleSubmit} >
+        <div >
+            <form className={style.container} onSubmit={handleSubmit} >
                 <input
+                    className={style.input}
                     type="text"
-                    placeholder="City..."
+                    placeholder="Search City"
                     value={name}
                     onChange={handleChange}
                 />
-                <input type="submit" valvue="Add" />
+                <button className={style.btnSearch}type="submit" valvue="Add">Search</button>
             </form>
         </div>
     );

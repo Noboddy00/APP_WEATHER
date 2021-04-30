@@ -15,6 +15,7 @@ export default function Cards(props) {
                     onClose={props.onClose}
                     humidity={c.humidity}
                     id={c.id}
+                    description={c.description}
                 />)}
             </div>
         );

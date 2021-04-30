@@ -10,7 +10,7 @@ export default function App() {
   const [cities, setCities] = useState([]);
 
   function onSearch(city) {
-    fetch(`http://api.openweathermap.org/data/2.5/weather?q=${city},{state code}&appid=${apiKey}`)
+    fetch(`http://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}`)
       .then(r => r.json())
       .then((receiver) => {
         if (receiver.main !== undefined) {
@@ -19,6 +19,7 @@ export default function App() {
             temp_max: Math.round(receiver.main.temp_max),
             description: receiver.weather[0].description,
             img: receiver.weather[0].icon,
+            description:receiver.weather[0].description,
             humidity: receiver.main.humidity,
             weather: receiver.weather[0].main,
             clouds: receiver.clouds.all,

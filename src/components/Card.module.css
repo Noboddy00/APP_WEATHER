@@ -1,18 +1,75 @@
-.card {
-    display:inline-flex;
+
+.clearSky {
+    display:flex;
     flex-direction:column;
-    width: 250px;    
-    background-color: rgb(65, 180, 225);
+    width: 250px;
+    background-image: url('../img/clear-sky.jpg');
     border: 2px solid black;
     border-radius: 5px;
+    background-color: rgba(0,0,0,0.6);
+    background-size: cover;
+    background-repeat: no-repeat;
+	position: relative;
+}
+.brokenClouds{
+    display:flex;
+    flex-direction:column;
+    width: 250px;
+    background-image: url('../img/broken-clouds.jpg');
+    border: 2px solid black;
+    border-radius: 5px;
+    background-color: rgba(0,0,0,0.6);
+    background-size: cover;
+    background-repeat: no-repeat;
+	position: relative;
+}
+.scatteredClouds{
+    display:flex;
+    flex-direction:column;
+    width: 250px;
+    background-image: url('../img/scattered-clouds.jfif');
+    border: 2px solid black;
+    border-radius: 5px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.smoke{
+    display:flex;
+    flex-direction:column;
+    width: 250px;
+    background-image: url('../img/smoke.jpg');
+    border: 2px solid black;
+    border-radius: 5px;
+    background-size: cover;
+    background-repeat: no-repeat; 
+}
+.fewClouds{
+    display:flex;
+    flex-direction:column;
+    width: 250px;
+    background-image: url('../img/few_clouds.jpg');
+    border: 2px solid black;
+    border-radius: 5px;
+    background-size: cover;
+    background-repeat: no-repeat;  
+}
+.overcastClouds{
+    display:flex;
+    flex-direction:column;
+    width: 250px;
+    background-image: url('../img/overcast-clouds.jpg');
+    border: 2px solid black;
+    border-radius: 5px;
+    background-size: cover;
+    background-repeat: no-repeat;  
 }
 .info {
-    display:flex;
+    display:block;
     align-items: center;
     justify-content: space-around;
 }
 
-.btnRed {
+.btn {
     color : whitesmoke;
     background-color:lightcoral;
     border-radius: 5px;
@@ -21,7 +78,11 @@
     align-self: flex-end;
 }
 
-.btnRed:hover{
+.btn:hover{
     color:black;
     background-color: whitesmoke;
+}
+.img{
+    position: relative;
+    width: 150px;
 }

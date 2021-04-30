@@ -1,15 +1,22 @@
 .container{
     display:flex;
-    justify-content:flex-end;
-
+    justify-content:center;
+    padding: 20px;
 }
 .btnSearch{
     color: black;
     background-color: rgb(65, 180, 225);
-    border: 2px solid gray;
+    border: 2px solid rgb(0, 0, 0);
     margin-left: 5px;
+    width: 10rem;
+    border-radius: 5px;
 }
 .btnSearch:hover{
     color:black;
-    background-color: whitesmoke;
+    background-color: rgb(243, 240, 240);
+    cursor:pointer;
+}
+.input{
+    width: 15rem;
+    text-align: center;
 }
