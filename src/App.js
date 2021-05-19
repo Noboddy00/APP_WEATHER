@@ -1,7 +1,9 @@
 import React, { useState } from 'react'
+import { Route } from 'react-router';
+import About from './components/About';
 import Cards from './components/Cards';
 import Nav from './components/Nav';
-import './App.css';
+import Ciudad from './components/Ciudad';
 
 const apiKey = "e971cf7f9b0bfd0a24087a5b3c3bbaa7";
 
@@ -19,7 +21,7 @@ export default function App() {
             temp_max: Math.round(receiver.main.temp_max),
             description: receiver.weather[0].description,
             img: receiver.weather[0].icon,
-            description:receiver.weather[0].description,
+            description: receiver.weather[0].description,
             humidity: receiver.main.humidity,
             weather: receiver.weather[0].main,
             clouds: receiver.clouds.all,
@@ -37,10 +39,16 @@ export default function App() {
     setCities(cities.filter(c => c.id !== id)); // elimino del estado actual la ciudad seleccionada
   };
 
+function onFilter(ciudadId){ //filtro el id de la ciudad seleccionada para obtener sus datos
+  return  cities.find (c => c.id === parseInt(ciudadId));
+}
+
   return (
-    <div className="App">
-      <Nav onSearch={onSearch} />
-      <Cards cities={cities} onClose={onClose} />
+    <div >
+      <Route path='/' render={() => <Nav onSearch={onSearch} />} />
+      <Route exact path='/' render={() => <Cards cities={cities} onClose={onClose} />} />
+      <Route path='/about' component={About} />
+      <Route exact path='/ciudad/:ciudadId' render={({ match }) => <Ciudad city={onFilter(match.params.ciudadId)} />} />
     </div>
   );
 };

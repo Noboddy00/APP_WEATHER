@@ -1,78 +1,26 @@
 
-.clearSky {
-    display:flex;
-    flex-direction:column;
-    width: 250px;
-    background-image: url('../img/clear-sky.jpg');
-    border: 2px solid black;
-    border-radius: 5px;
-    background-color: rgba(0,0,0,0.6);
-    background-size: cover;
-    background-repeat: no-repeat;
-	position: relative;
-}
-.brokenClouds{
-    display:flex;
-    flex-direction:column;
-    width: 250px;
-    background-image: url('../img/broken-clouds.jpg');
-    border: 2px solid black;
-    border-radius: 5px;
-    background-color: rgba(0,0,0,0.6);
-    background-size: cover;
-    background-repeat: no-repeat;
-	position: relative;
-}
-.scatteredClouds{
-    display:flex;
-    flex-direction:column;
-    width: 250px;
-    background-image: url('../img/scattered-clouds.jfif');
-    border: 2px solid black;
-    border-radius: 5px;
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-.smoke{
-    display:flex;
-    flex-direction:column;
-    width: 250px;
-    background-image: url('../img/smoke.jpg');
-    border: 2px solid black;
-    border-radius: 5px;
-    background-size: cover;
-    background-repeat: no-repeat; 
-}
-.fewClouds{
-    display:flex;
-    flex-direction:column;
-    width: 250px;
-    background-image: url('../img/few_clouds.jpg');
-    border: 2px solid black;
-    border-radius: 5px;
-    background-size: cover;
-    background-repeat: no-repeat;  
-}
-.overcastClouds{
-    display:flex;
-    flex-direction:column;
-    width: 250px;
-    background-image: url('../img/overcast-clouds.jpg');
-    border: 2px solid black;
-    border-radius: 5px;
-    background-size: cover;
-    background-repeat: no-repeat;  
-}
-.info {
-    display:block;
+.card{
+    display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: space-around;
+    font: 150% sans-serif;
+    font-family: "Segoe UI";
+    -webkit-text-stroke: 0.8px black;
+    color: #fdfaf6;; 
+    background-color: #393e46;
+    text-decoration: none;
+    font-size: 20px;
+    opacity: 80%;
+    border-radius: 15px;
+    width: 300px;
+
 }
 
 .btn {
-    color : whitesmoke;
-    background-color:lightcoral;
-    border-radius: 5px;
+    background-color: #233e8b;
+    border-radius: 20px;
+    border: 2px solid #21094e;;
+    border-radius: 20px;
     width: 30px;
     margin: 5px;
     align-self: flex-end;

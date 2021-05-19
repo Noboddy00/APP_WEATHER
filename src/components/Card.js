@@ -1,24 +1,10 @@
 import React from 'react';
 import style from './Card.module.css';
-
+// este componente se encarga de renderizar cada carta 
 export default function Card(props) {
     console.log(props)
-    let descript;
-    if (props.description==='clear sky'){
-        descript=style.clearSky;
-    }else if(props.description=== 'broken clouds'){
-        descript=style.brokenClouds;
-    }else if(props.description=== 'scattered clouds'){
-        descript=style.scatteredClouds;
-    }else if(props.description==='smoke'){
-        descript=style.smoke;
-    }else if(props.description==='few clouds'){
-        descript=style.fewClouds;
-    }else if(props.description==='overcast clouds'){
-        descript=style.overcastClouds;
-    }
     return (
-        <div className={descript}>
+        <div className={style.card}>
             <button className={style.btn} onClick={() => props.onClose(props.id)}>X</button>
             <div className={style.info}>
                 <img className={style.img} src={`http://openweathermap.org/img/wn/${props.img}@2x.png`} alt="Img not found" />
